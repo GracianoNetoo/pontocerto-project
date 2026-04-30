@@ -6,6 +6,8 @@ import HomeView from '@/components/HomeView.vue'
 import Dashboard from '@/components/Dashboard.vue'
 import SearchResults from '../components/SearchResults.vue'
 import PropertyDetails from '@/components/PropertyDetails.vue'
+import PublishProperty from '@/components/PublishProperty.vue'
+import Chat from '@/components/Chat.vue'
 import NotFound from '@/components/NotFound.vue'
 
 const routes = [
@@ -29,6 +31,16 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     component: Dashboard
+  },
+  {
+    path: '/publicar',
+    name: 'publish-property',
+    component: PublishProperty
+  },
+  {
+    path: '/chat',
+    name: 'chat',
+    component: Chat
   },
   // Rota para páginas não encontradas (404)
   {

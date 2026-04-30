@@ -1,16 +1,7 @@
 <script setup>
-// Importando os componentes globais e estruturais
 import Navbar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
-import PropertyCard from '@/components/PropertyCard.vue'
-/**
- * Nota: Como você tem um componente "Boundary" (provavelmente um Error Boundary), 
- * ele deve envolver a parte principal para capturar erros de renderização.
- * * Se você estiver usando Vue Router, o <RouterView /> seria usado no lugar
- * do <HomeView /> para alternar entre Dashboard, SearchResults, etc.
- */
-import Boundary from '@/components/Boundary.vue';
-import HomeView from '@/components/HomeView.vue'; // Exemplo de visualização inicial
+import Boundary from '@/components/Boundary.vue'
 </script>
 
 <template>
@@ -19,13 +10,12 @@ import HomeView from '@/components/HomeView.vue'; // Exemplo de visualização i
 
     <main class="main-content">
       <Boundary>
-        <HomeView />
+        <RouterView />
       </Boundary>
     </main>
 
     <Footer />
-    
-    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -33,10 +23,11 @@ import HomeView from '@/components/HomeView.vue'; // Exemplo de visualização i
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: #f5f5f4;
 }
 
 .main-content {
-  flex: 1; /* Faz o conteúdo ocupar o espaço restante entre Header e Footer */
-  padding: 20px;
+  flex: 1;
+  width: 100%;
 }
 </style>

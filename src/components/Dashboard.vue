@@ -1,7 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#F5F5F4]">
-    <Navbar />
-
+  <div class="bg-[#F5F5F4]">
     <div class="max-w-[1280px] mx-auto px-4 lg:px-8 py-6">
       <div class="flex gap-6">
         <!-- Desktop Sidebar -->
@@ -295,7 +293,6 @@ import {
   TrendingUp, Users, MapPin, Bell, ChevronRight, LogOut,
   BarChart3
 } from 'lucide-vue-next'
-import Navbar from '@/components/NavBar.vue'
 import { PROPERTIES, CONVERSATIONS, VISITS, formatPrice } from '@/lib/mockData.js'
 
 const activeTab = ref('overview')

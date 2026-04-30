@@ -1,7 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#F5F5F4]">
-    <Navbar />
-
+  <div class="bg-[#F5F5F4]">
     <div class="max-w-[1280px] mx-auto px-4 lg:px-8 py-6">
       <!-- Top bar -->
       <div class="flex items-center justify-between mb-6 gap-4">
@@ -106,7 +104,6 @@
       </div>
     </div>
 
-    <Footer />
   </div>
 </template>
 
@@ -116,8 +113,6 @@ import { useRoute, RouterLink } from 'vue-router'
 import { Button } from '@/components/ui/button'
 import { Slider } from '@/components/ui/slider'
 import { SlidersHorizontal, X, ChevronDown, Grid3X3, List } from 'lucide-vue-next'
-import Navbar from '@/components/NavBar.vue'
-import Footer from '@/components/Footer.vue'
 import PropertyCard from '@/components/PropertyCard.vue'
 import { PROPERTIES, Property, formatPrice } from '@/lib/mockData'
 

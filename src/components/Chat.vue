@@ -1,7 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#F5F5F4] flex flex-col">
-    <Navbar />
-
+  <div class="bg-[#F5F5F4] flex flex-col">
     <div class="flex-1 max-w-[1280px] mx-auto w-full px-4 lg:px-8 py-6">
       <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden"
         :style="{ height: 'calc(100vh - 140px)' }">
@@ -163,10 +161,9 @@
 <script setup>
 import { ref, computed, watch, onMounted, nextTick } from 'vue'
 import { useRoute, useRouter, RouterLink } from 'vue-router'
-import { Button } from '@/components/ui/button.vue'
+import { Button } from '@/components/ui/button'
 import { Send, Search, ArrowLeft, Phone, MoreVertical, MapPin } from 'lucide-vue-next'
-import Navbar from './components/Navbar.vue'
-import { CONVERSATIONS, Conversation, Message } from '@/lib/mockData'
+import { CONVERSATIONS } from '@/lib/mockData'
 
 const route = useRoute()
 const router = useRouter()

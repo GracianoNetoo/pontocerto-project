@@ -1,7 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#F5F5F4]">
-    <Navbar />
-
+  <div class="bg-[#F5F5F4]">
     <!-- Hero Section -->
     <section class="max-w-[1280px] mx-auto px-4 lg:px-8 pt-10 pb-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -244,7 +242,6 @@
       </div>
     </section>
 
-    <Footer />
   </div>
 </template>
 
@@ -253,8 +250,6 @@ import { ref } from 'vue'
 import { useRouter, RouterLink } from 'vue-router'
 import { Button } from '@/components/ui/button'
 import { Search, MapPin, ChevronRight, Shield, Zap, Users } from 'lucide-vue-next'
-import Navbar from '@/components/NavBar.vue'
-import Footer from '@/components/Footer.vue'
 import PropertyCard from '@/components/PropertyCard.vue'
 import { PROPERTIES, formatPrice } from '@/lib/mockData'
 

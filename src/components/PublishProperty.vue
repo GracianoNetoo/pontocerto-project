@@ -1,7 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#F5F5F4]">
-    <Navbar />
-
+  <div class="bg-[#F5F5F4]">
     <!-- Success state -->
     <div v-if="submitted" class="max-w-[600px] mx-auto px-4 py-16 text-center">
       <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-10">
@@ -312,7 +310,6 @@ import {
   CheckCircle2, Upload, X, ChevronRight, ChevronLeft,
   Home, MapPin, DollarSign, Image, FileText, Check
 } from 'lucide-vue-next'
-import Navbar from '/components/NavBar.vue'
 import { ANGOLA_CITIES, LUANDA_NEIGHBORHOODS } from '@/lib/mockData'
 
 const router = useRouter()

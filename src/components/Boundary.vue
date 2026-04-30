@@ -3,7 +3,7 @@
     <div class="flex flex-col items-center w-full max-w-2xl p-8">
       <AlertTriangle
         :size="48"
-        class="text-destructive mb-6 flex-shrink-0"
+        class="text-destructive mb-6 shrink-0"
       />
 
       <h2 class="text-xl mb-4">An unexpected error occurred.</h2>

@@ -1,5 +1,5 @@
 <template>
-  <div ref="mapContainer" :class="cn('w-full h-[500px]', className)" />
+  <div ref="mapContainer" :class="cn('w-full h-125', className)" />
 </template>
 
 <script setup>

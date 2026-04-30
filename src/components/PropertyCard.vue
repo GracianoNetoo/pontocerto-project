@@ -11,11 +11,11 @@
         />
         <div class="absolute top-3 left-3 flex gap-1.5 flex-wrap">
           <Badge
-v-for="badge in (property.badges || [property.type]).slice(0, 2)"
-    :key="badge"
-    :type="badge"
-  />
-</div>
+          v-for="badge in (property.badges || [property.type]).slice(0, 2)"
+          :key="badge"
+          :type="badge"
+          />
+        </div>
       </div>
 
       <!-- Content -->

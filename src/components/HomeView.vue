@@ -1,16 +1,11 @@
 <template>
   <div class="bg-[#F5F5F4]">
     <!-- Hero Section -->
-    <section class="max-w-[1280px] mx-auto px-4 lg:px-8 pt-10 pb-8">
+    <section class="max-w-9xl mx-auto px-4 lg:px-8 pt-10 pb-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <!-- Left: Text + Search -->
         <div class="animate-fade-in-up">
-          <!-- Trust badge -->
-          <div
-            class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1.5 rounded-full mb-5">
-            <div class="w-1.5 h-1.5 rounded-full bg-blue-500" />
-            Trusted real estate · Luanda, Benguela, Huíla
-          </div>
+          
 
           <!-- Headline -->
           <h1 class="font-['DM_Sans'] text-4xl lg:text-5xl font-bold text-gray-900 leading-[1.1] mb-4">
@@ -58,7 +53,7 @@
               </select>
 
               <Button @click="handleSearch"
-                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-xl flex items-center gap-2 shrink-0">
+                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-2 py-2 rounded-xl flex items-center gap-2 shrink-0">
                 <Search :size="15" />
                 Pesquisar
               </Button>
@@ -94,7 +89,7 @@
             </div>
 
             <!-- Image -->
-            <div class="mx-5 rounded-xl overflow-hidden aspect-16/9 bg-gray-100">
+            <div class="mx-5 rounded-xl overflow-hidden aspect-video bg-gray-100">
               <img :src="featuredHero.images[0]" :alt="featuredHero.title" class="w-full h-full object-cover" />
             </div>
 
@@ -128,7 +123,7 @@
     </section>
 
     <!-- Stats bar -->
-    <section class="max-w-[1280px] mx-auto px-4 lg:px-8 py-6">
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 py-6">
       <div
         class="bg-white rounded-2xl border border-gray-100 shadow-sm px-8 py-5 flex flex-col sm:flex-row items-center justify-around gap-6">
         <div v-for="(stat, i) in stats" :key="i" class="text-center">
@@ -139,7 +134,7 @@
     </section>
 
     <!-- Featured Properties -->
-    <section class="max-w-[1280px] mx-auto px-4 lg:px-8 py-8">
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 py-8">
       <div class="flex items-center justify-between mb-6">
         <div>
           <p class="text-blue-600 text-xs font-semibold uppercase tracking-wider mb-1">Explorar</p>
@@ -163,7 +158,7 @@
     </section>
 
     <!-- Why PontoCerto -->
-    <section class="max-w-[1280px] mx-auto px-4 lg:px-8 py-8">
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 py-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         <div class="bg-white rounded-2xl border border-gray-100 p-6">
           <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
@@ -196,7 +191,7 @@
     </section>
 
     <!-- More properties -->
-    <section class="max-w-[1280px] mx-auto px-4 lg:px-8 py-8">
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 py-8">
       <div class="flex items-center justify-between mb-6">
         <h2 class="font-['DM_Sans'] text-2xl font-bold text-gray-900">Mais imóveis disponíveis</h2>
         <RouterLink to="/pesquisa">
@@ -212,7 +207,7 @@
     </section>
 
     <!-- CTA Banner -->
-    <section class="max-w-[1280px] mx-auto px-4 lg:px-8 py-8">
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 py-8">
       <div
         class="bg-white rounded-2xl border border-gray-100 shadow-sm px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
         <div>

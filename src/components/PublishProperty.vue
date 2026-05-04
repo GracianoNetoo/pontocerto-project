@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#F5F5F4]">
     <!-- Success state -->
-    <div v-if="submitted" class="max-w-[600px] mx-auto px-4 py-16 text-center">
+    <div v-if="submitted" class="max-w-150 mx-auto px-4 py-16 text-center">
       <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-10">
         <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-5">
           <CheckCircle2 :size="32" class="text-green-600" />
@@ -25,7 +25,7 @@
     </div>
 
     <!-- Form -->
-    <div v-else class="max-w-[800px] mx-auto px-4 lg:px-8 py-8">
+    <div v-else class="max-w-200 mx-auto px-4 lg:px-8 py-8">
       <!-- Page header -->
       <div class="mb-8">
         <h1 class="font-['DM_Sans'] text-2xl font-bold text-gray-900 mb-1">Publicar imóvel</h1>

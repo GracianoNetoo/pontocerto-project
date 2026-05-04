@@ -6,16 +6,19 @@
       <!-- Breadcrumb -->
       <div class="flex items-center gap-2 text-sm text-gray-500 mb-5">
         <RouterLink to="/" class="hover:text-blue-600">Início</RouterLink>
-        <span>/</span>
+        <span aria-hidden="true">/</span>
         <RouterLink to="/pesquisa" class="hover:text-blue-600">Imóveis</RouterLink>
-        <span>/</span>
+        <span aria-hidden="true">/</span>
         <span class="text-gray-900 font-medium truncate">{{ property.title }}</span>
       </div>
 
       <!-- Image Gallery -->
       <div class="mb-8">
-        <div class="relative rounded-2xl overflow-hidden bg-gray-100" style="aspect-ratio: 16/7;">
-          <img :src="property.images[currentImage]" :alt="property.title" class="w-full h-full object-cover" />
+        <div class="relative rounded-2xl overflow-hidden bg-gray-100 aspect-16/7">
+          <Transition name="fade" mode="out-in">
+            <img :key="currentImage" :src="property.images[currentImage]" :alt="property.title"
+              class="w-full h-full object-cover" />
+          </Transition>
           <!-- Navigation arrows -->
           <template v-if="property.images.length > 1">
             <button @click="currentImage = (currentImage - 1 + property.images.length) % property.images.length"
@@ -210,7 +213,8 @@
                 <span class="font-medium text-gray-900">
                   {{ new Date(property.publishedAt).toLocaleDateString('pt-AO', {
                     day: '2-digit', month: 'short', year:
-                  'numeric' }) }}
+                      'numeric'
+                  }) }}
                 </span>
               </div>
             </div>

@@ -73,7 +73,6 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { RouterLink } from 'vue-router'
 import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-vue-next'
 

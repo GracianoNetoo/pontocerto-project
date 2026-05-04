@@ -1,17 +1,15 @@
 <script setup>
-import Navbar from '@/components/NavBar.vue'
+import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
-import Boundary from '@/components/Boundary.vue'
 import { RouterView } from 'vue-router'
 
 </script>
 
 <template>
   <div class="app-container">
-    <Navbar />
+    <NavBar />
 
     <main class="main-content">
-      <!-- A 'key' força o Vue a perceber a mudança de rota -->
       <RouterView :key="$route.fullPath" />
     </main>
 

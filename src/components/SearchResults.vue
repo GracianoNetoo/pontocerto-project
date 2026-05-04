@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#F5F5F4]">
-    <div class="max-w-[1280px] mx-auto px-4 lg:px-8 py-6">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-6">
       <!-- Top bar -->
       <div class="flex items-center justify-between mb-6 gap-4">
         <div>

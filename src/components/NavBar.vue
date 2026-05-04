@@ -1,6 +1,6 @@
 <template>
   <header class="top-nav bg-white border-b border-gray-100 shadow-sm">
-    <div class="max-w-[1280px] mx-auto px-4 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <RouterLink to="/" class="flex items-center gap-1.5 group">

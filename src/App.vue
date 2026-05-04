@@ -2,6 +2,8 @@
 import Navbar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
 import Boundary from '@/components/Boundary.vue'
+import { RouterView } from 'vue-router'
+
 </script>
 
 <template>
@@ -9,9 +11,8 @@ import Boundary from '@/components/Boundary.vue'
     <Navbar />
 
     <main class="main-content">
-      <Boundary>
-        <RouterView />
-      </Boundary>
+      <!-- A 'key' força o Vue a perceber a mudança de rota -->
+      <RouterView :key="$route.fullPath" />
     </main>
 
     <Footer />

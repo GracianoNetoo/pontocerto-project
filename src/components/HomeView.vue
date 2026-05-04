@@ -230,7 +230,7 @@
           </RouterLink>
           <RouterLink to="/dashboard">
             <Button variant="outline" class="font-semibold px-6 rounded-xl border-gray-200">
-              Ver dashboard
+              Ver perfil
             </Button>
           </RouterLink>
         </div>

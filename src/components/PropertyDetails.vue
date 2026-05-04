@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-[#F5F5F4]">
     <Navbar />
 
-    <div v-if="property" class="max-w-[1280px] mx-auto px-4 lg:px-8 py-6">
+    <div v-if="property" class="max-w-7xl mx-auto px-4 lg:px-8 py-6">
       <!-- Breadcrumb -->
       <div class="flex items-center gap-2 text-sm text-gray-500 mb-5">
         <RouterLink to="/" class="hover:text-blue-600">Início</RouterLink>
@@ -254,7 +254,7 @@
     </div>
 
     <!-- Property not found -->
-    <div v-else class="max-w-[1280px] mx-auto px-4 lg:px-8 py-16 text-center">
+    <div v-else class="max-w-7xl mx-auto px-4 lg:px-8 py-16 text-center">
       <h2 class="font-['DM_Sans'] text-2xl font-bold text-gray-900 mb-4">Imóvel não encontrado</h2>
       <Button @click="router.push('/pesquisa')" class="bg-blue-600 text-white">
         Ver todos os imóveis
@@ -333,7 +333,7 @@ import {
   ChevronRight, MessageCircle, Calendar, Phone, Share2,
   Heart, CheckCircle2, X
 } from 'lucide-vue-next'
-import Navbar from '@/components/NavBar.vue'
+
 import Footer from '@/components/Footer.vue'
 import PropertyCard from '@/components/PropertyCard.vue'
 import { PROPERTIES, formatPrice } from '@/lib/mockData'

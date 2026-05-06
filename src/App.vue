@@ -1,6 +1,7 @@
 <script setup>
 import NavBar from '@/components/NavBar.vue'
 import Footer from '@/components/Footer.vue'
+import FloatingSearch from '@/components/FloatingSearch.vue'
 import { RouterView } from 'vue-router'
 
 </script>
@@ -14,6 +15,7 @@ import { RouterView } from 'vue-router'
     </main>
 
     <Footer />
+    <FloatingSearch />
   </div>
 </template>
 

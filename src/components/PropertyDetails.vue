@@ -356,9 +356,8 @@ const saved = ref(false)
 const times = ['09:00', '10:00', '11:00', '14:00', '15:00', '16:00', '17:00']
 
 const property = computed(() => {
-  return PROPERTIES.find(p => p.id === route.params.id)
+  return PROPERTIES.find(p => p.id === Number(route.params.id))
 })
-
 const similar = computed(() => {
   if (!property.value) return []
   return PROPERTIES.filter(p => p.id !== property.value.id && p.type === property.value.type).slice(0, 4)

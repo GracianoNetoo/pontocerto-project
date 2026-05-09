@@ -26,17 +26,18 @@
 
         <!-- Right actions -->
         <div class="hidden md:flex items-center gap-3">
-          <RouterLink to="/dashboard">
-            <Button variant="ghost" size="sm" class="text-gray-600 font-medium">
-              Entrar
-            </Button>
-          </RouterLink>
-          <RouterLink to="/publicar">
-            <Button size="sm" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg px-4">
-              Publicar imóvel
-            </Button>
-          </RouterLink>
-        </div>
+            <RouterLink to="/login">
+          <Button variant="ghost" size="sm" class="text-gray-600 font-medium">
+            Entrar
+          </Button>
+        </RouterLink>
+
+  <RouterLink to="/publicar">
+    <Button size="sm" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg px-4">
+      Publicar imóvel
+    </Button>
+  </RouterLink>
+</div>
 
         <!-- Mobile menu toggle -->
         <button class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100" @click="mobileOpen = !mobileOpen"

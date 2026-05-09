@@ -249,7 +249,7 @@
           <!-- Settings Tab -->
           <div v-if="activeTab === 'settings'" class="space-y-5">
             <h2 class="font-['DM_Sans'] font-bold text-gray-900 text-lg">Definições da conta</h2>
-            <div class="bg-white rounded-2xl border border-gray-100 p-6 space-y-5">
+            <div class="bg-white rounded-2xl border border-gray-100 p-6 spac  e-y-5">
               <div class="flex items-center gap-4 pb-5 border-b border-gray-100">
                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Profile"
                   class="w-16 h-16 rounded-full object-cover" />
